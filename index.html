@@ -281,6 +281,17 @@ details .faq-body{padding:0 28px 24px;color:var(--ink-soft);font-size:15.5px}
 .contact-card span{font-size:13.5px;color:var(--ink-soft)}
 .map-frame{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);height:100%;min-height:420px}
 .map-frame iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.4) sepia(.08)}
+.contact-form{max-width:640px;margin:26px 0 40px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px;box-shadow:var(--shadow)}
+.contact-form .form-row{margin-bottom:18px}
+.contact-form label{display:block;font-size:13.5px;font-weight:650;margin-bottom:7px;color:var(--ink)}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:var(--font-body);font-size:15px;color:var(--ink);background:var(--paper);transition:.2s}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:none;border-color:var(--clay);background:#fff}
+.contact-form textarea{resize:vertical;min-height:90px;font-family:var(--font-body)}
+.contact-form button{width:100%;justify-content:center;margin-top:4px}
+.contact-form .cf-result{margin-top:14px;font-size:14.5px;text-align:center;min-height:20px}
+.contact-form .cf-result.ok{color:#2E7D4F;font-weight:600}
+.contact-form .cf-result.err{color:#A34808;font-weight:600}
+.hidden{position:absolute;left:-9999px}
 
 /* ---------- footer ---------- */
 footer{background:var(--ink);color:#B9B1A6;padding:40px 0 0;font-size:14.5px}
@@ -534,8 +545,8 @@ footer a:hover{color:#fff}
       </div>
       <div class="why-card reveal">
         <div class="arr" aria-hidden="true">→</div>
-        <h3>Známá tvář u porodu</h3>
-        <p>Je velká šance, že u vašeho porodu budeme právě my. Známé prostředí a známá tvář = klidnější porod.</p>
+        <h3>Známá tvář v porodnici</h3>
+        <p>Je šance, že se spolu potkáme v porodnici. Na kontrole, u příjmu nebo během porodu.</p>
       </div>
       <div class="why-card reveal">
         <div class="arr" aria-hidden="true">→</div>
@@ -630,7 +641,7 @@ footer a:hover{color:#fff}
           <span>👩‍🍼 Vede Anna &amp; Kateřina</span>
         </div>
         <div class="spots soon">Připravujeme</div>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20zářijový%20kurz&body=Dobrý%20den,%0Amám%20zájem%20o%20zářijový%20termín%20kurzu.%20Dejte%20mi%20prosím%20vědět,%20jakmile%20bude%20vypsaný.%0A%0AJméno:%0ATelefon:%0ATermín%20porodu:" class="btn btn-light">Dát vědět jako první</a>
+        <a href="#kontakt" data-zajem="Zářijový kurz (dejte mi vědět, až bude vypsaný)" class="btn btn-light">Dát vědět jako první</a>
       </div>
       <div class="term-card reveal">
         <div class="t-date">Termín na míru</div>
@@ -640,7 +651,7 @@ footer a:hover{color:#fff}
           <span>👩‍🍼 Individuální kurz jen pro vás</span>
         </div>
         <div class="spots">Kdykoliv po domluvě</div>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20individuální%20kurz" class="btn btn-light">Zjistit více</a>
+        <a href="#kontakt" data-zajem="Individuální kurz na míru" class="btn btn-light">Zjistit více</a>
       </div>
     </div>
   </div>
@@ -661,7 +672,7 @@ footer a:hover{color:#fff}
           <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E5F2E9"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round"/></svg> Příprava doprovodu — co dělat a co rozhodně nedělat</li>
         </ul>
         <p style="font-size:16px;font-weight:700;color:var(--ink-soft);margin-bottom:26px">Konzultace nenahrazuje těhotenskou poradnu u vašeho gynekologa. Laktační poradenství aktuálně nenabízíme.</p>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20osobní%20konzultaci" class="btn btn-primary">Domluvit konzultaci</a>
+        <a href="#kontakt" data-zajem="Osobní konzultace" class="btn btn-primary">Domluvit konzultaci</a>
       </div>
       <div class="photo-frame reveal"><img src="assets/konzultace.jpg" alt="Osobní konzultace porodní asistentky s těhotnou ženou doma"></div>
     </div>
@@ -685,7 +696,7 @@ footer a:hover{color:#fff}
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Konzultace po kurzu zdarma</li>
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Občerstvení</li>
         </ul>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20skupinový%20kurz" class="btn btn-light">Vybrat termín</a>
+        <a href="#kontakt" data-zajem="Skupinový kurz" class="btn btn-light">Vybrat termín</a>
       </div>
       <div class="price-card featured reveal">
         <div class="flag">Nejoblíbenější</div>
@@ -698,7 +709,7 @@ footer a:hover{color:#fff}
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E5F2E9"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round"/></svg> Konzultace po kurzu zdarma</li>
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#E5F2E9"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round"/></svg> Občerstvení</li>
         </ul>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20kurz%20pro%20pár" class="btn btn-primary">Rezervovat pro pár</a>
+        <a href="#kontakt" data-zajem="Skupinový kurz + doprovod" class="btn btn-primary">Rezervovat pro pár</a>
       </div>
       <div class="price-card reveal">
         <h3>Individuální příprava</h3>
@@ -710,7 +721,7 @@ footer a:hover{color:#fff}
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Tištěné materiály</li>
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Konzultace po kurzu zdarma</li>
         </ul>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Individuální%20příprava" class="btn btn-light">Chci individuální přípravu</a>
+        <a href="#kontakt" data-zajem="Individuální příprava" class="btn btn-light">Chci individuální přípravu</a>
       </div>
       <div class="price-card reveal">
         <h3>Individuální konzultace</h3>
@@ -721,7 +732,7 @@ footer a:hover{color:#fff}
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Zpracování zkušenosti z předchozího porodu</li>
           <li><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(245,201,138,.2)"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#F5C98A" stroke-width="2" stroke-linecap="round"/></svg> Konkrétní obavy a otázky, na které chcete klid a čas</li>
         </ul>
-        <a href="mailto:porodnikurzy.jablonec@gmail.com?subject=Zájem%20o%20individuální%20konzultaci" class="btn btn-light">Chci individuální konzultaci</a>
+        <a href="#kontakt" data-zajem="Individuální konzultace" class="btn btn-light">Chci individuální konzultaci</a>
       </div>
     </div>
     <div class="insurance-note reveal" id="pojistovny" style="display:block;scroll-margin-top:90px">
@@ -740,7 +751,7 @@ footer a:hover{color:#fff}
       </div>
       <p style="font-size:12px;opacity:.5;margin-top:14px">Částky dle preventivních programů pojišťoven pro rok 2026. Přesné podmínky čerpání si ověřte u své pojišťovny — s podáním žádosti vám pomůžeme.</p>
     </div>
-    <p style="margin-top:30px;font-size:16px;font-weight:700;opacity:.85">Osobní konzultace: 900 Kč / hodina. Dárkový poukaz na kurz či konzultaci rádi připravíme — krásný dárek pro budoucí maminku.</p>
+    <p style="margin-top:30px;font-size:16px;font-weight:700;opacity:.85">Můžeme vám vystavit poukaz na kurz či konzultaci — ideální dárek pro budoucí maminku.</p>
   </div>
 </section>
 
@@ -912,7 +923,44 @@ footer a:hover{color:#fff}
   <div class="container">
     <div class="eyebrow">Kontakt</div>
     <h2>Ozvěte se nám</h2>
-    <p class="lead">Odpovídáme obvykle do 24 hodin. Když zrovna nebereme telefon napište SMS a ozveme se zpátky.</p>
+    <p class="lead">Odpovídáme obvykle do 24 hodin. Když zrovna nebereme telefon, napište SMS a ozveme se zpátky.</p>
+    <p style="font-size:13.5px;color:var(--ink-soft);max-width:640px;margin-bottom:8px">Odesláním formuláře potvrzuji, že jsem se seznámil/a se <a href="ochrana-osobnich-udaju.html" style="color:var(--clay-dark);text-decoration:underline">zásadami zpracování osobních údajů</a> a souhlasím s jejich zněním.</p>
+    <div class="contact-form reveal">
+      <form id="kontakt-form">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+        <input type="hidden" name="access_key" value="1aa8bd13-6509-4ff1-8610-55300966a5a8">
+        <input type="hidden" name="subject" value="Nová zpráva z webu Předporodní kurzy Jablonec">
+        <div class="form-row">
+          <label for="f-jmeno">Jméno a příjmení</label>
+          <input type="text" id="f-jmeno" name="Jméno a příjmení" required>
+        </div>
+        <div class="form-row">
+          <label for="f-kontakt">Telefon nebo e-mail</label>
+          <input type="text" id="f-kontakt" name="Kontakt" required>
+        </div>
+        <div class="form-row">
+          <label for="f-zajem">Mám zájem o</label>
+          <select id="f-zajem" name="Mám zájem o" required>
+            <option value="">Vyberte...</option>
+            <option>Skupinový kurz 8. 8.</option>
+            <option>Zářijový kurz (dejte mi vědět, až bude vypsaný)</option>
+            <option>Individuální kurz na míru</option>
+            <option>Osobní konzultace</option>
+            <option>Skupinový kurz</option>
+            <option>Skupinový kurz + doprovod</option>
+            <option>Individuální příprava</option>
+            <option>Individuální konzultace</option>
+            <option>Jiné</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="f-zprava">Zpráva (nepovinné)</label>
+          <textarea id="f-zprava" name="Zpráva" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Odeslat</button>
+        <p id="kontakt-form-result" class="cf-result"></p>
+      </form>
+    </div>
     <div class="kontakt-grid">
       <div class="contact-cards">
         <a href="tel:+420774170365" class="contact-card reveal">
@@ -977,7 +1025,7 @@ footer a:hover{color:#fff}
         <ul>
           <li><a href="#o-nas">O nás</a></li>
           <li><a href="#faq">Časté otázky</a></li>
-          <li><a href="https://docs.google.com/document/d/1kohWYoDq0w8ug79Y-9vish16DSLmK9YI0oQENYJY2to/edit?tab=t.0" target="_blank" rel="noopener">Ochrana osobních údajů</a></li>
+          <li><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></li>
           <li><a href="#">Obchodní podmínky</a></li>
         </ul>
       </div>
@@ -1020,6 +1068,41 @@ menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.class
 // reveal on scroll
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// předvýběr zájmu v kontaktním formuláři podle kliknutého tlačítka
+document.querySelectorAll('[data-zajem]').forEach(el=>{
+  el.addEventListener('click',()=>{
+    const sel=document.getElementById('f-zajem');
+    if(sel) sel.value=el.dataset.zajem;
+  });
+});
+// odeslání kontaktního formuláře přes Web3Forms
+const kForm=document.getElementById('kontakt-form');
+if(kForm){
+  const kResult=document.getElementById('kontakt-form-result');
+  kForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    kResult.textContent='Odesílám...';
+    kResult.className='cf-result';
+    fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Accept':'application/json'},
+      body:new FormData(kForm)
+    }).then(async r=>{
+      const json=await r.json();
+      if(r.ok && json.success){
+        kResult.textContent='Díky! Ozveme se vám co nejdřív.';
+        kResult.className='cf-result ok';
+        kForm.reset();
+      }else{
+        kResult.textContent='Něco se nepovedlo. Zkuste to prosím znovu, nebo nám napište přímo na porodnikurzy.jablonec@gmail.com.';
+        kResult.className='cf-result err';
+      }
+    }).catch(()=>{
+      kResult.textContent='Něco se nepovedlo. Zkuste to prosím znovu, nebo nám napište přímo na porodnikurzy.jablonec@gmail.com.';
+      kResult.className='cf-result err';
+    });
+  });
+}
 </script>
 </body>
 </html>
