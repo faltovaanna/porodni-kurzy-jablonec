@@ -568,11 +568,25 @@ footer a:hover{color:#fff}
   .team-photo{min-height:250px}
   .sticky-cta a{font-size:14.5px;padding:13px 20px}
 }
+.lang-banner{display:flex;align-items:center;gap:14px;margin:0 0 22px;padding:14px 18px;border:1.5px solid var(--clay);background:var(--clay-soft);border-radius:16px;text-decoration:none;color:var(--ink);max-width:520px;transition:.2s}
+.lang-banner:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-1px)}
+.lang-banner .lb-flag{font-size:30px;line-height:1}
+.lang-banner b{display:block;font-size:15px;color:var(--clay-dark)}
+.lang-banner small{display:block;font-size:13px;color:var(--ink-soft);margin-top:2px}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-lang{border:1.5px solid var(--clay);color:var(--clay-dark)!important;padding:8px 14px;border-radius:999px;font-weight:600!important;background:var(--clay-soft)}
+.nav-lang:hover{background:var(--clay);color:#fff!important}
+.lang-mobile{display:none;align-items:center;gap:6px;text-decoration:none;font-size:13.5px;font-weight:600;color:var(--clay-dark);border:1.5px solid var(--clay);background:var(--clay-soft);padding:7px 12px;border-radius:999px}
+.topbar .tb-lang{margin-left:6px;padding:2px 10px;border:1px solid rgba(255,255,255,.45);border-radius:999px;white-space:nowrap}
+@media(max-width:1020px){
+  .lang-mobile{display:inline-flex}
+  nav.menu .nav-lang{display:none}
+}
 </style>
 </head>
 <body>
 
-<div class="topbar">🌿 Nejbližší kurz: <b>sobota 14. listopadu<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener">Rezervovat<span class="tb-x"> místo</span> →</a></div>
+<div class="topbar">🌿 Nejbližší kurz: <b>sobota 14. listopadu<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener">Rezervovat<span class="tb-x"> místo</span> →</a><span class="tb-x"> · <a href="en.html" class="tb-lang" hreflang="en" lang="en">🇬🇧 English version</a></span></div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
@@ -591,10 +605,10 @@ footer a:hover{color:#fff}
       <a href="#recenze">Recenze</a>
       <a href="#faq">FAQ</a>
       <a href="co-zabalit-do-porodnice.html">Seznam do porodnice</a>
-      <a href="en.html" class="nav-lang" hreflang="en" lang="en" style="font-weight:700">EN</a>
+      <a href="en.html" class="nav-lang" hreflang="en" lang="en">🇬🇧 English</a>
       <a href="#kontakt" class="nav-cta">Rezervovat</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <div class="nav-right"><a href="en.html" class="lang-mobile" hreflang="en" lang="en">🇬🇧 English</a><button class="burger" id="burger" aria-label="Menu">☰</button></div>
   </div>
 </header>
 
@@ -610,6 +624,7 @@ footer a:hover{color:#fff}
           <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary cta-reserve">Rezervovat místo na 14.&#8201;11.</a>
           <a href="#kurz" class="btn btn-ghost cta-learn">Co se na kurzu naučíte</a>
         </div>
+        <a href="en.html" class="lang-banner" hreflang="en" lang="en"><span class="lb-flag">🇬🇧</span><span><b>English-speaking? This website is also available in English.</b><small>Read in English · private classes &amp; consultations in English →</small></span></a>
         <div class="trust-row">
           <div class="t"><span style="color:#F5B301;letter-spacing:2px">★★★★★</span> 5,0 na Google</div>
           <div class="t">👥 Max 6 žen + doprovod</div>
@@ -1156,6 +1171,7 @@ footer a:hover{color:#fff}
           <li><a href="#o-nas">O nás</a></li>
           <li><a href="#faq">Časté otázky</a></li>
           <li><a href="co-zabalit-do-porodnice.html">Checklist do porodnice</a></li>
+          <li><a href="en.html" hreflang="en" lang="en">🇬🇧 English version</a></li>
           <li><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></li>
           <li><a href="#">Obchodní podmínky</a></li>
         </ul>
