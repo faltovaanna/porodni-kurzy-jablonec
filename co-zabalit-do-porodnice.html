@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Co si zabalit do porodnice — interaktivní checklist | Předporodní kurzy Jablonec &amp; Liberec</title>
+<title>Co si zabalit do porodnice / Hospital bag checklist (CZ + EN) | Předporodní kurzy Jablonec &amp; Liberec</title>
 <meta name="description" content="Interaktivní seznam věcí do porodnice — odškrtávejte položky přímo na telefonu při balení tašky.">
 <meta property="og:title" content="Co si zabalit do porodnice — interaktivní checklist">
 <meta property="og:description" content="Přehledný seznam věcí do porodnice od porodních asistentek — odškrtávejte položky přímo na telefonu při balení tašky.">
@@ -435,6 +435,11 @@ footer a:hover{color:#fff}
   .team-photo{min-height:250px}
   .sticky-cta a{font-size:14.5px;padding:13px 20px}
 }
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-lang{border:1.5px solid var(--clay);color:var(--clay-dark)!important;padding:8px 14px;border-radius:999px;font-weight:600!important;background:var(--clay-soft)}
+.nav-lang:hover{background:var(--clay);color:#fff!important}
+.lang-mobile{display:none;align-items:center;gap:6px;text-decoration:none;font-size:13.5px;font-weight:600;color:var(--clay-dark);border:1.5px solid var(--clay);background:var(--clay-soft);padding:7px 12px;border-radius:999px}
+@media(max-width:1020px){.lang-mobile{display:inline-flex}nav.menu .nav-lang{display:none}}
 </style>
 <style>
 .pack-hero{background:var(--paper-deep)}
@@ -454,17 +459,27 @@ footer a:hover{color:#fff}
 .pack-item .note{display:block;font-size:12px;color:var(--ink-soft);margin-top:2px;font-weight:400}
 .pack-item.checked label .main-text{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--clay-soft)}
 .pack-item.checked .note{opacity:.6}
+.pack-item .en{display:block;font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:1px;font-weight:400}
+.pack-item .note .en{display:inline;font-size:12px;margin:0}
+.pack-item.checked .en{opacity:.6}
+.en-h{text-transform:none;letter-spacing:0;font-weight:500;opacity:.8}
+.en-line{display:block;font-size:.8em;color:var(--ink-soft);font-style:italic;font-weight:400;margin-top:4px}
 .pack-note-inline{font-size:12.5px;color:var(--ink-soft);margin:-6px 0 16px}
 .pack-download{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
 @media(max-width:860px){
   .pack-grid{grid-template-columns:1fr;gap:8px}
   .progress-wrap{padding:16px 18px}
 }
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-lang{border:1.5px solid var(--clay);color:var(--clay-dark)!important;padding:8px 14px;border-radius:999px;font-weight:600!important;background:var(--clay-soft)}
+.nav-lang:hover{background:var(--clay);color:#fff!important}
+.lang-mobile{display:none;align-items:center;gap:6px;text-decoration:none;font-size:13.5px;font-weight:600;color:var(--clay-dark);border:1.5px solid var(--clay);background:var(--clay-soft);padding:7px 12px;border-radius:999px}
+@media(max-width:1020px){.lang-mobile{display:inline-flex}nav.menu .nav-lang{display:none}}
 </style>
 </head>
 <body>
 
-<div class="topbar">🌿 Nejbližší kurz: <b>sobota 8. srpna<span class="tb-x"> 2026, 16:00–20:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="index.html#terminy">Rezervovat<span class="tb-x"> místo</span> →</a></div>
+<div class="topbar">🌿 Nejbližší kurz · Next class: <b>14. 11. 2026<span class="tb-x">, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener">Rezervovat · Reserve →</a></div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
@@ -483,75 +498,76 @@ footer a:hover{color:#fff}
       <a href="index.html#recenze">Recenze</a>
       <a href="index.html#faq">FAQ</a>
       <a href="co-zabalit-do-porodnice.html">Seznam do porodnice</a>
+      <a href="en.html" class="nav-lang" hreflang="en" lang="en">🇬🇧 English site</a>
       <a href="index.html#kontakt" class="nav-cta">Rezervovat</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <div class="nav-right"><a href="en.html" class="lang-mobile" hreflang="en" lang="en">🇬🇧 English</a><button class="burger" id="burger" aria-label="Menu">☰</button></div>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
 <section class="pack-hero" style="padding-top:20px">
   <div class="container">
-    <div class="eyebrow">Pro budoucí maminky</div>
-    <h2>Co si zabalit do porodnice</h2>
-    <p class="lead">Přehledný seznam, který si můžete rovnou na telefonu odškrtávat při balení tašky. Sestavily jsme ho na základě zkušeností z porodního sálu — u řady položek najdete i naše konkrétní tipy.</p>
+    <div class="eyebrow">Pro budoucí maminky · For mums-to-be</div>
+    <h2>Co si zabalit do porodnice<span class="en-line">What to pack for the maternity hospital</span></h2>
+    <p class="lead">Přehledný seznam, který si můžete rovnou na telefonu odškrtávat při balení tašky. Sestavily jsme ho na základě zkušeností z porodního sálu — u řady položek najdete i naše konkrétní tipy.<span class="en-line" style="font-size:.9em">A simple list you can tick off on your phone while packing your bag, put together from our experience on the delivery ward — many items include our practical tips. The list is in Czech with an English translation under each item.</span></p>
     <div class="progress-wrap reveal">
-      <div class="progress-label" id="pw-label">0 / 0 zabaleno</div>
+      <div class="progress-label" id="pw-label">0 / 0 zabaleno · packed</div>
       <div class="progress-bar"><div class="progress-bar-fill" id="pw-fill"></div></div>
-      <button class="reset-btn" id="pw-reset" type="button">Vynulovat</button>
+      <button class="reset-btn" id="pw-reset" type="button">Vynulovat · Reset</button>
     </div>
-    <p style="font-size:12.5px;color:var(--ink-soft);margin-top:14px">Zaškrtnuté položky se ukládají přímo ve vašem telefonu — klidně appku/prohlížeč zavřete a vraťte se k balení později.</p>
+    <p style="font-size:12.5px;color:var(--ink-soft);margin-top:14px">Zaškrtnuté položky se ukládají přímo ve vašem telefonu — klidně appku/prohlížeč zavřete a vraťte se k balení později.<br><i>Ticked items are saved on your phone — you can close the browser and come back later.</i></p>
   </div>
 </section>
 
 <!-- ============ NA PORODNÍ SÁL ============ -->
 <section id="sal">
   <div class="container">
-    <div class="eyebrow">1 · Na porodní sál</div>
-    <h2 style="font-size:clamp(24px,3vw,32px)">Co budete potřebovat hned</h2>
+    <div class="eyebrow">1 · Na porodní sál · Delivery room</div>
+    <h2 style="font-size:clamp(24px,3vw,32px)">Co budete potřebovat hned<span class="en-line">What you will need right away</span></h2>
     <div class="pack-grid">
       <div>
         <div class="pack-group">
-          <h3>Důležité dokumenty</h3>
-<div class="pack-item" data-id="p1"><input type="checkbox" id="c1"><label for="c1"><span class="main-text">Těhotenská průkazka!</span></label></div>
-<div class="pack-item" data-id="p2"><input type="checkbox" id="c2"><label for="c2"><span class="main-text">Kartička pojišťovny</span></label></div>
-<div class="pack-item" data-id="p3"><input type="checkbox" id="c3"><label for="c3"><span class="main-text">Vyplněné souhlasy</span></label></div>
-<div class="pack-item" data-id="p4"><input type="checkbox" id="c4"><label for="c4"><span class="main-text">Prohlášení o jméně</span><span class="note">nesezdaní</span></label></div>
-<div class="pack-item" data-id="p5"><input type="checkbox" id="c5"><label for="c5"><span class="main-text">Oddací list</span><span class="note">sezdaní, stačí při sepsání porodopisu</span></label></div>
+          <h3>Důležité dokumenty <span class="en-h"> / Important documents</span></h3>
+<div class="pack-item" data-id="p1"><input type="checkbox" id="c1"><label for="c1"><span class="main-text">Těhotenská průkazka!</span><span class="en">Pregnancy record book (průkazka)!</span></label></div>
+<div class="pack-item" data-id="p2"><input type="checkbox" id="c2"><label for="c2"><span class="main-text">Kartička pojišťovny</span><span class="en">Health insurance card</span></label></div>
+<div class="pack-item" data-id="p3"><input type="checkbox" id="c3"><label for="c3"><span class="main-text">Vyplněné souhlasy</span><span class="en">Completed consent forms</span></label></div>
+<div class="pack-item" data-id="p4"><input type="checkbox" id="c4"><label for="c4"><span class="main-text">Prohlášení o jméně</span><span class="en">Declaration of the child's name</span><span class="note">nesezdaní<span class="en"> — if unmarried</span></span></label></div>
+<div class="pack-item" data-id="p5"><input type="checkbox" id="c5"><label for="c5"><span class="main-text">Oddací list</span><span class="en">Marriage certificate</span><span class="note">sezdaní, stačí při sepsání porodopisu<span class="en"> — if married; enough to bring it when the birth record is written</span></span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Pro komfort ženy</h3>
-<div class="pack-item" data-id="p6"><input type="checkbox" id="c6"><label for="c6"><span class="main-text">Gumička do vlasů</span></label></div>
-<div class="pack-item" data-id="p7"><input type="checkbox" id="c7"><label for="c7"><span class="main-text">Brčko na pití</span></label></div>
-<div class="pack-item" data-id="p8"><input type="checkbox" id="c8"><label for="c8"><span class="main-text">Balzám na rty</span></label></div>
-<div class="pack-item" data-id="p9"><input type="checkbox" id="c9"><label for="c9"><span class="main-text">Teplé ponožky</span></label></div>
-<div class="pack-item" data-id="p10"><input type="checkbox" id="c10"><label for="c10"><span class="main-text">Svačina</span><span class="note">hroznový cukr, datle, banán, čokoláda, ovocné kapsičky…</span></label></div>
-<div class="pack-item" data-id="p11"><input type="checkbox" id="c11"><label for="c11"><span class="main-text">Pití</span><span class="note">neperlivé vody, čaj…</span></label></div>
+          <h3>Pro komfort ženy <span class="en-h"> / For the mum's comfort</span></h3>
+<div class="pack-item" data-id="p6"><input type="checkbox" id="c6"><label for="c6"><span class="main-text">Gumička do vlasů</span><span class="en">Hair tie</span></label></div>
+<div class="pack-item" data-id="p7"><input type="checkbox" id="c7"><label for="c7"><span class="main-text">Brčko na pití</span><span class="en">Drinking straw</span></label></div>
+<div class="pack-item" data-id="p8"><input type="checkbox" id="c8"><label for="c8"><span class="main-text">Balzám na rty</span><span class="en">Lip balm</span></label></div>
+<div class="pack-item" data-id="p9"><input type="checkbox" id="c9"><label for="c9"><span class="main-text">Teplé ponožky</span><span class="en">Warm socks</span></label></div>
+<div class="pack-item" data-id="p10"><input type="checkbox" id="c10"><label for="c10"><span class="main-text">Svačina</span><span class="en">Snack</span><span class="note">hroznový cukr, datle, banán, čokoláda, ovocné kapsičky…<span class="en"> — glucose tablets, dates, banana, chocolate, fruit pouches…</span></span></label></div>
+<div class="pack-item" data-id="p11"><input type="checkbox" id="c11"><label for="c11"><span class="main-text">Pití</span><span class="en">Drinks</span><span class="note">neperlivé vody, čaj…<span class="en"> — still water, tea…</span></span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Hygiena</h3>
-<div class="pack-item" data-id="p12"><input type="checkbox" id="c12"><label for="c12"><span class="main-text">Osuška, ručník na intimní partie</span></label></div>
-<div class="pack-item" data-id="p13"><input type="checkbox" id="c13"><label for="c13"><span class="main-text">Mýdlo</span></label></div>
+          <h3>Hygiena <span class="en-h"> / Hygiene</span></h3>
+<div class="pack-item" data-id="p12"><input type="checkbox" id="c12"><label for="c12"><span class="main-text">Osuška, ručník na intimní partie</span><span class="en">Bath towel, small towel for intimate areas</span></label></div>
+<div class="pack-item" data-id="p13"><input type="checkbox" id="c13"><label for="c13"><span class="main-text">Mýdlo</span><span class="en">Soap</span></label></div>
         </div>
       </div>
       <div>
         <div class="pack-group">
-          <h3>Oblečení</h3>
-<div class="pack-item" data-id="p14"><input type="checkbox" id="c14"><label for="c14"><span class="main-text">Přezuvky</span></label></div>
-<div class="pack-item" data-id="p15"><input type="checkbox" id="c15"><label for="c15"><span class="main-text">Košile</span><span class="note">může být nemocniční</span></label></div>
-<div class="pack-item" data-id="p16"><input type="checkbox" id="c16"><label for="c16"><span class="main-text">Kojící podprsenka</span><span class="note">dle komfortu ženy</span></label></div>
-<div class="pack-item" data-id="p17"><input type="checkbox" id="c17"><label for="c17"><span class="main-text">Poporodní kalhotky</span><span class="note">na porodním sále stačí 1 ks</span></label></div>
-<div class="pack-item" data-id="p18"><input type="checkbox" id="c18"><label for="c18"><span class="main-text">Vložky</span><span class="note">mohou být nemocniční</span></label></div>
+          <h3>Oblečení <span class="en-h"> / Clothing</span></h3>
+<div class="pack-item" data-id="p14"><input type="checkbox" id="c14"><label for="c14"><span class="main-text">Přezuvky</span><span class="en">Slippers</span></label></div>
+<div class="pack-item" data-id="p15"><input type="checkbox" id="c15"><label for="c15"><span class="main-text">Košile</span><span class="en">Nightgown / shirt</span><span class="note">může být nemocniční<span class="en"> — the hospital's one is fine</span></span></label></div>
+<div class="pack-item" data-id="p16"><input type="checkbox" id="c16"><label for="c16"><span class="main-text">Kojící podprsenka</span><span class="en">Nursing bra</span><span class="note">dle komfortu ženy<span class="en"> — as you prefer</span></span></label></div>
+<div class="pack-item" data-id="p17"><input type="checkbox" id="c17"><label for="c17"><span class="main-text">Poporodní kalhotky</span><span class="en">Postpartum underwear</span><span class="note">na porodním sále stačí 1 ks<span class="en"> — 1 piece is enough on the delivery ward</span></span></label></div>
+<div class="pack-item" data-id="p18"><input type="checkbox" id="c18"><label for="c18"><span class="main-text">Vložky</span><span class="en">Maternity pads</span><span class="note">mohou být nemocniční<span class="en"> — the hospital's are fine</span></span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Ostatní</h3>
-<div class="pack-item" data-id="p19"><input type="checkbox" id="c19"><label for="c19"><span class="main-text">Příbor</span></label></div>
+          <h3>Ostatní <span class="en-h"> / Other</span></h3>
+<div class="pack-item" data-id="p19"><input type="checkbox" id="c19"><label for="c19"><span class="main-text">Příbor</span><span class="en">Cutlery</span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Pro doprovod</h3>
-<div class="pack-item" data-id="p20"><input type="checkbox" id="c20"><label for="c20"><span class="main-text">Jednorázový oblek</span></label></div>
-<div class="pack-item" data-id="p21"><input type="checkbox" id="c21"><label for="c21"><span class="main-text">Přezuvky</span></label></div>
-<div class="pack-item" data-id="p22"><input type="checkbox" id="c22"><label for="c22"><span class="main-text">Svačina</span></label></div>
+          <h3>Pro doprovod <span class="en-h"> / For your companion</span></h3>
+<div class="pack-item" data-id="p20"><input type="checkbox" id="c20"><label for="c20"><span class="main-text">Jednorázový oblek</span><span class="en">Disposable gown</span></label></div>
+<div class="pack-item" data-id="p21"><input type="checkbox" id="c21"><label for="c21"><span class="main-text">Přezuvky</span><span class="en">Slippers</span></label></div>
+<div class="pack-item" data-id="p22"><input type="checkbox" id="c22"><label for="c22"><span class="main-text">Svačina</span><span class="en">Snack</span></label></div>
         </div>
       </div>
     </div>
@@ -561,49 +577,49 @@ footer a:hover{color:#fff}
 <!-- ============ ŠESTINEDĚLÍ ============ -->
 <section class="pack-hero" id="sestinedeli">
   <div class="container">
-    <div class="eyebrow">2 · Na oddělení šestinedělí</div>
-    <h2 style="font-size:clamp(24px,3vw,32px)">Po porodu, na pokoji</h2>
+    <div class="eyebrow">2 · Na oddělení šestinedělí · Postpartum ward</div>
+    <h2 style="font-size:clamp(24px,3vw,32px)">Po porodu, na pokoji<span class="en-line">After birth, in your room</span></h2>
     <div class="pack-grid">
       <div>
         <div class="pack-group">
-          <h3>Základní</h3>
-<div class="pack-item" data-id="p23"><input type="checkbox" id="c23"><label for="c23"><span class="main-text">Léky, pokud užívám</span></label></div>
-<div class="pack-item" data-id="p24"><input type="checkbox" id="c24"><label for="c24"><span class="main-text">Příbor, utěrka</span></label></div>
+          <h3>Základní <span class="en-h"> / Basics</span></h3>
+<div class="pack-item" data-id="p23"><input type="checkbox" id="c23"><label for="c23"><span class="main-text">Léky, pokud užívám</span><span class="en">Medication, if you take any</span></label></div>
+<div class="pack-item" data-id="p24"><input type="checkbox" id="c24"><label for="c24"><span class="main-text">Příbor, utěrka</span><span class="en">Cutlery, tea towel</span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Oblečení</h3>
-<div class="pack-item" data-id="p25"><input type="checkbox" id="c25"><label for="c25"><span class="main-text">Košile</span></label></div>
-<div class="pack-item" data-id="p26"><input type="checkbox" id="c26"><label for="c26"><span class="main-text">Kojící podprsenky</span><span class="note">nejlépe pohodlné, bez kostic — nekupovat příliš brzy, po porodu se prsy zvětší</span></label></div>
-<div class="pack-item" data-id="p27"><input type="checkbox" id="c27"><label for="c27"><span class="main-text">Vložky do podprsenky</span></label></div>
-<div class="pack-item" data-id="p28"><input type="checkbox" id="c28"><label for="c28"><span class="main-text">Župan</span><span class="note">dle zvyklosti ženy, na oddělení bývá velmi teplo</span></label></div>
-<div class="pack-item" data-id="p29"><input type="checkbox" id="c29"><label for="c29"><span class="main-text">Poporodní kalhotky</span><span class="note">nejlépe síťované, dostatečně velké, prodyšné, pružné</span></label></div>
-<div class="pack-item" data-id="p30"><input type="checkbox" id="c30"><label for="c30"><span class="main-text">Poporodní vložky</span><span class="note">1–2 balení</span></label></div>
-<div class="pack-item" data-id="p31"><input type="checkbox" id="c31"><label for="c31"><span class="main-text">Ponožky</span></label></div>
-<div class="pack-item" data-id="p32"><input type="checkbox" id="c32"><label for="c32"><span class="main-text">Šátek na zavinutí bříška po porodu</span></label></div>
+          <h3>Oblečení <span class="en-h"> / Clothing</span></h3>
+<div class="pack-item" data-id="p25"><input type="checkbox" id="c25"><label for="c25"><span class="main-text">Košile</span><span class="en">Nightgown / shirt</span></label></div>
+<div class="pack-item" data-id="p26"><input type="checkbox" id="c26"><label for="c26"><span class="main-text">Kojící podprsenky</span><span class="en">Nursing bras</span><span class="note">nejlépe pohodlné, bez kostic — nekupovat příliš brzy, po porodu se prsy zvětší<span class="en"> — ideally comfortable, without underwire — do not buy too early, breasts grow after birth</span></span></label></div>
+<div class="pack-item" data-id="p27"><input type="checkbox" id="c27"><label for="c27"><span class="main-text">Vložky do podprsenky</span><span class="en">Breast pads</span></label></div>
+<div class="pack-item" data-id="p28"><input type="checkbox" id="c28"><label for="c28"><span class="main-text">Župan</span><span class="en">Dressing gown</span><span class="note">dle zvyklosti ženy, na oddělení bývá velmi teplo<span class="en"> — as you prefer; the ward is usually very warm</span></span></label></div>
+<div class="pack-item" data-id="p29"><input type="checkbox" id="c29"><label for="c29"><span class="main-text">Poporodní kalhotky</span><span class="en">Postpartum underwear</span><span class="note">nejlépe síťované, dostatečně velké, prodyšné, pružné<span class="en"> — preferably mesh, big enough, breathable, stretchy</span></span></label></div>
+<div class="pack-item" data-id="p30"><input type="checkbox" id="c30"><label for="c30"><span class="main-text">Poporodní vložky</span><span class="en">Postpartum pads</span><span class="note">1–2 balení<span class="en"> — 1–2 packs</span></span></label></div>
+<div class="pack-item" data-id="p31"><input type="checkbox" id="c31"><label for="c31"><span class="main-text">Ponožky</span><span class="en">Socks</span></label></div>
+<div class="pack-item" data-id="p32"><input type="checkbox" id="c32"><label for="c32"><span class="main-text">Šátek na zavinutí bříška po porodu</span><span class="en">Scarf for belly binding after birth</span></label></div>
         </div>
       </div>
       <div>
         <div class="pack-group">
-          <h3>Hygiena</h3>
-<div class="pack-item" data-id="p33"><input type="checkbox" id="c33"><label for="c33"><span class="main-text">Osuška, ručníky na intimní partie</span><span class="note">popř. papírové ubrousky, např. bavlněné Babylove Sensitive DM</span></label></div>
-<div class="pack-item" data-id="p34"><input type="checkbox" id="c34"><label for="c34"><span class="main-text">Zklidňující gel na hráz</span><span class="note">např. Nobilis Tilia</span></label></div>
-<div class="pack-item" data-id="p35"><input type="checkbox" id="c35"><label for="c35"><span class="main-text">Krém na bradavky</span><span class="note">nejlépe neomývací, přírodní, např. Medarek Mast pro maminku, Medela Purelan</span></label></div>
-<div class="pack-item" data-id="p36"><input type="checkbox" id="c36"><label for="c36"><span class="main-text">Šampon, sprchový gel</span></label></div>
-<div class="pack-item" data-id="p37"><input type="checkbox" id="c37"><label for="c37"><span class="main-text">Kartáček na zuby, pasta</span></label></div>
-<div class="pack-item" data-id="p38"><input type="checkbox" id="c38"><label for="c38"><span class="main-text">Hřeben</span></label></div>
-<div class="pack-item" data-id="p39"><input type="checkbox" id="c39"><label for="c39"><span class="main-text">Toaletní papír</span><span class="note">nemocniční může být hrubý</span></label></div>
-<div class="pack-item" data-id="p40"><input type="checkbox" id="c40"><label for="c40"><span class="main-text">Intimní sprška</span><span class="note">lze chodit močit do sprchy</span></label></div>
-<div class="pack-item" data-id="p41"><input type="checkbox" id="c41"><label for="c41"><span class="main-text">Kapesníčky</span></label></div>
-<div class="pack-item" data-id="p42"><input type="checkbox" id="c42"><label for="c42"><span class="main-text">Deodorant</span><span class="note">neparfemovaný</span></label></div>
+          <h3>Hygiena <span class="en-h"> / Hygiene</span></h3>
+<div class="pack-item" data-id="p33"><input type="checkbox" id="c33"><label for="c33"><span class="main-text">Osuška, ručníky na intimní partie</span><span class="en">Bath towel, small towels for intimate areas</span><span class="note">popř. papírové ubrousky, např. bavlněné Babylove Sensitive DM<span class="en"> — or paper wipes, e.g. cotton Babylove Sensitive from DM</span></span></label></div>
+<div class="pack-item" data-id="p34"><input type="checkbox" id="c34"><label for="c34"><span class="main-text">Zklidňující gel na hráz</span><span class="en">Soothing gel for the perineum</span><span class="note">např. Nobilis Tilia<span class="en"> — e.g. Nobilis Tilia</span></span></label></div>
+<div class="pack-item" data-id="p35"><input type="checkbox" id="c35"><label for="c35"><span class="main-text">Krém na bradavky</span><span class="en">Nipple cream</span><span class="note">nejlépe neomývací, přírodní, např. Medarek Mast pro maminku, Medela Purelan<span class="en"> — preferably one that does not need washing off, natural, e.g. Medárek Mast pro maminku, Medela Purelan</span></span></label></div>
+<div class="pack-item" data-id="p36"><input type="checkbox" id="c36"><label for="c36"><span class="main-text">Šampon, sprchový gel</span><span class="en">Shampoo, shower gel</span></label></div>
+<div class="pack-item" data-id="p37"><input type="checkbox" id="c37"><label for="c37"><span class="main-text">Kartáček na zuby, pasta</span><span class="en">Toothbrush, toothpaste</span></label></div>
+<div class="pack-item" data-id="p38"><input type="checkbox" id="c38"><label for="c38"><span class="main-text">Hřeben</span><span class="en">Comb</span></label></div>
+<div class="pack-item" data-id="p39"><input type="checkbox" id="c39"><label for="c39"><span class="main-text">Toaletní papír</span><span class="en">Toilet paper</span><span class="note">nemocniční může být hrubý<span class="en"> — hospital paper can be rough</span></span></label></div>
+<div class="pack-item" data-id="p40"><input type="checkbox" id="c40"><label for="c40"><span class="main-text">Intimní sprška</span><span class="en">Intimate wash spray</span><span class="note">lze chodit močit do sprchy<span class="en"> — you can pee in the shower</span></span></label></div>
+<div class="pack-item" data-id="p41"><input type="checkbox" id="c41"><label for="c41"><span class="main-text">Kapesníčky</span><span class="en">Tissues</span></label></div>
+<div class="pack-item" data-id="p42"><input type="checkbox" id="c42"><label for="c42"><span class="main-text">Deodorant</span><span class="en">Deodorant</span><span class="note">neparfemovaný<span class="en"> — unscented</span></span></label></div>
         </div>
         <div class="pack-group">
-          <h3>Volitelné / dle potřeby</h3>
-<div class="pack-item" data-id="p43"><input type="checkbox" id="c43"><label for="c43"><span class="main-text">Mobil, nabíječka</span></label></div>
-<div class="pack-item" data-id="p44"><input type="checkbox" id="c44"><label for="c44"><span class="main-text">Hydrogelové polštářky na bradavky / stříbrné kloboučky</span></label></div>
-<div class="pack-item" data-id="p45"><input type="checkbox" id="c45"><label for="c45"><span class="main-text">Sušené švestky</span></label></div>
-<div class="pack-item" data-id="p46"><input type="checkbox" id="c46"><label for="c46"><span class="main-text">Noční světlo</span></label></div>
-<div class="pack-item" data-id="p47"><input type="checkbox" id="c47"><label for="c47"><span class="main-text">Zavinovací šátek na podporu stahování dělohy</span></label></div>
-<div class="pack-item" data-id="p48"><input type="checkbox" id="c48"><label for="c48"><span class="main-text">Vlastní polštář, pokud nevyhovuje nemocniční</span></label></div>
+          <h3>Volitelné / dle potřeby <span class="en-h"> / Optional / as needed</span></h3>
+<div class="pack-item" data-id="p43"><input type="checkbox" id="c43"><label for="c43"><span class="main-text">Mobil, nabíječka</span><span class="en">Phone, charger</span></label></div>
+<div class="pack-item" data-id="p44"><input type="checkbox" id="c44"><label for="c44"><span class="main-text">Hydrogelové polštářky na bradavky / stříbrné kloboučky</span><span class="en">Hydrogel nipple pads / silver nipple shields</span></label></div>
+<div class="pack-item" data-id="p45"><input type="checkbox" id="c45"><label for="c45"><span class="main-text">Sušené švestky</span><span class="en">Dried plums (prunes)</span></label></div>
+<div class="pack-item" data-id="p46"><input type="checkbox" id="c46"><label for="c46"><span class="main-text">Noční světlo</span><span class="en">Night light</span></label></div>
+<div class="pack-item" data-id="p47"><input type="checkbox" id="c47"><label for="c47"><span class="main-text">Zavinovací šátek na podporu stahování dělohy</span><span class="en">Wrap scarf to support uterine contraction</span></label></div>
+<div class="pack-item" data-id="p48"><input type="checkbox" id="c48"><label for="c48"><span class="main-text">Vlastní polštář, pokud nevyhovuje nemocniční</span><span class="en">Your own pillow, if the hospital one does not suit you</span></label></div>
         </div>
       </div>
     </div>
@@ -613,38 +629,38 @@ footer a:hover{color:#fff}
 <!-- ============ MIMINKO + CESTA DOMŮ ============ -->
 <section id="miminko">
   <div class="container">
-    <div class="eyebrow">3 · Pro miminko a cestu domů</div>
-    <h2 style="font-size:clamp(24px,3vw,32px)">Pro to nejmenší</h2>
+    <div class="eyebrow">3 · Pro miminko a cestu domů · Baby &amp; going home</div>
+    <h2 style="font-size:clamp(24px,3vw,32px)">Pro to nejmenší<span class="en-line">For the little one</span></h2>
     <div class="pack-grid">
       <div>
         <div class="pack-group">
-          <h3>Pro miminko</h3>
-<div class="pack-item" data-id="p49"><input type="checkbox" id="c49"><label for="c49"><span class="main-text">Vlhčené ubrousky</span></label></div>
-<div class="pack-item" data-id="p50"><input type="checkbox" id="c50"><label for="c50"><span class="main-text">Plenky</span></label></div>
-<div class="pack-item" data-id="p51"><input type="checkbox" id="c51"><label for="c51"><span class="main-text">Látkové pleny</span></label></div>
-<div class="pack-item" data-id="p52"><input type="checkbox" id="c52"><label for="c52"><span class="main-text">Jednorázové podložky</span></label></div>
-<div class="pack-item" data-id="p53"><input type="checkbox" id="c53"><label for="c53"><span class="main-text">Ponožky</span><span class="note">popř. čepička, rukavičky</span></label></div>
-<div class="pack-item" data-id="p54"><input type="checkbox" id="c54"><label for="c54"><span class="main-text">Vlastní mast na zadeček, kosmetika, oblečení</span><span class="note">volitelné — lze využít i nemocniční</span></label></div>
+          <h3>Pro miminko <span class="en-h"> / For the baby</span></h3>
+<div class="pack-item" data-id="p49"><input type="checkbox" id="c49"><label for="c49"><span class="main-text">Vlhčené ubrousky</span><span class="en">Baby wipes</span></label></div>
+<div class="pack-item" data-id="p50"><input type="checkbox" id="c50"><label for="c50"><span class="main-text">Plenky</span><span class="en">Nappies</span></label></div>
+<div class="pack-item" data-id="p51"><input type="checkbox" id="c51"><label for="c51"><span class="main-text">Látkové pleny</span><span class="en">Cloth nappies / muslin squares</span></label></div>
+<div class="pack-item" data-id="p52"><input type="checkbox" id="c52"><label for="c52"><span class="main-text">Jednorázové podložky</span><span class="en">Disposable changing pads</span></label></div>
+<div class="pack-item" data-id="p53"><input type="checkbox" id="c53"><label for="c53"><span class="main-text">Ponožky</span><span class="en">Socks</span><span class="note">popř. čepička, rukavičky<span class="en"> — optionally a hat, mittens</span></span></label></div>
+<div class="pack-item" data-id="p54"><input type="checkbox" id="c54"><label for="c54"><span class="main-text">Vlastní mast na zadeček, kosmetika, oblečení</span><span class="en">Your own nappy cream, baby cosmetics, clothes</span><span class="note">volitelné — lze využít i nemocniční<span class="en"> — optional — the hospital's can be used too</span></span></label></div>
         </div>
       </div>
       <div>
         <div class="pack-group">
-          <h3>Na cestu domů (není třeba hned s sebou)</h3>
-<div class="pack-item" data-id="p55"><input type="checkbox" id="c55"><label for="c55"><span class="main-text">Oblečení pro ženu</span></label></div>
-<div class="pack-item" data-id="p56"><input type="checkbox" id="c56"><label for="c56"><span class="main-text">Ponožky pro miminko</span></label></div>
-<div class="pack-item" data-id="p57"><input type="checkbox" id="c57"><label for="c57"><span class="main-text">Kalhoty pro miminko</span></label></div>
-<div class="pack-item" data-id="p58"><input type="checkbox" id="c58"><label for="c58"><span class="main-text">Body pro miminko</span></label></div>
-<div class="pack-item" data-id="p59"><input type="checkbox" id="c59"><label for="c59"><span class="main-text">Mikinka / svetýrek pro miminko</span></label></div>
-<div class="pack-item" data-id="p60"><input type="checkbox" id="c60"><label for="c60"><span class="main-text">Čepička pro miminko</span></label></div>
-<div class="pack-item" data-id="p61"><input type="checkbox" id="c61"><label for="c61"><span class="main-text">Sedačka</span></label></div>
-<div class="pack-item" data-id="p62"><input type="checkbox" id="c62"><label for="c62"><span class="main-text">Dečka do sedačky</span></label></div>
+          <h3>Na cestu domů (není třeba hned s sebou) <span class="en-h"> / For the way home (not needed right away)</span></h3>
+<div class="pack-item" data-id="p55"><input type="checkbox" id="c55"><label for="c55"><span class="main-text">Oblečení pro ženu</span><span class="en">Clothes for the mum</span></label></div>
+<div class="pack-item" data-id="p56"><input type="checkbox" id="c56"><label for="c56"><span class="main-text">Ponožky pro miminko</span><span class="en">Socks for the baby</span></label></div>
+<div class="pack-item" data-id="p57"><input type="checkbox" id="c57"><label for="c57"><span class="main-text">Kalhoty pro miminko</span><span class="en">Trousers for the baby</span></label></div>
+<div class="pack-item" data-id="p58"><input type="checkbox" id="c58"><label for="c58"><span class="main-text">Body pro miminko</span><span class="en">Bodysuit for the baby</span></label></div>
+<div class="pack-item" data-id="p59"><input type="checkbox" id="c59"><label for="c59"><span class="main-text">Mikinka / svetýrek pro miminko</span><span class="en">Baby cardigan / jumper</span></label></div>
+<div class="pack-item" data-id="p60"><input type="checkbox" id="c60"><label for="c60"><span class="main-text">Čepička pro miminko</span><span class="en">Hat for the baby</span></label></div>
+<div class="pack-item" data-id="p61"><input type="checkbox" id="c61"><label for="c61"><span class="main-text">Sedačka</span><span class="en">Car seat</span></label></div>
+<div class="pack-item" data-id="p62"><input type="checkbox" id="c62"><label for="c62"><span class="main-text">Dečka do sedačky</span><span class="en">Blanket for the car seat</span></label></div>
         </div>
       </div>
     </div>
     <div class="pack-download">
       <a href="assets/checklist-co-zabalit-do-porodnice.pdf" download class="btn btn-light">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
-        Stáhnout jako PDF k vytištění
+        Stáhnout jako PDF k vytištění (česky) · Download printable PDF (Czech)
       </a>
     </div>
   </div>
@@ -734,14 +750,14 @@ function syncItem(b){
 function updateProgress(){
   const done=boxes.filter(b=>b.checked).length;
   const total=boxes.length;
-  label.textContent = done + ' / ' + total + ' zabaleno';
+  label.textContent = done + ' / ' + total + ' zabaleno · packed';
   fill.style.width = (total? (done/total*100):0) + '%';
 }
 boxes.forEach(b=>{
   b.addEventListener('change', ()=>{ syncItem(b); updateProgress(); save(); });
 });
 document.getElementById('pw-reset').addEventListener('click', ()=>{
-  if(!confirm('Opravdu vynulovat všechny zaškrtnuté položky?')) return;
+  if(!confirm('Opravdu vynulovat všechny zaškrtnuté položky? / Really reset all ticked items?')) return;
   boxes.forEach(b=>{ b.checked=false; syncItem(b); });
   updateProgress(); save();
 });
