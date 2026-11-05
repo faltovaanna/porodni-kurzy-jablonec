@@ -60,7 +60,7 @@
     "address": { "@type": "PostalAddress", "streetAddress": "Lovecká 561/14", "addressLocality": "Jablonec nad Nisou", "postalCode": "466 01", "addressCountry": "CZ" }
   },
   "organizer": { "@type": "Organization", "name": "Prenatal Classes Jablonec", "url": "https://www.porodnikurzyjablonec.cz/en.html" },
-  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/InStock", "url": "https://www.porodnikurzyjablonec.cz/en.html#terminy" }
+  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/SoldOut", "url": "https://www.porodnikurzyjablonec.cz/en.html#terminy" }
 }
 </script>
 <script type="application/ld+json">
@@ -301,7 +301,7 @@ nav.menu a:hover{color:var(--clay)}
 
 /* ---------- terminy ---------- */
 .terminy{background:var(--paper-deep)}
-.term-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:28px}
+.term-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:28px}
 .term-card{background:#fff;border-radius:var(--radius);padding:34px 30px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;position:relative;transition:.3s}
 .term-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
 .term-card.featured{border:2px solid var(--clay);box-shadow:var(--shadow)}
@@ -607,7 +607,7 @@ footer a:hover{color:#fff}
 </head>
 <body>
 
-<div class="topbar">🌿 Next class: <b>Saturday 14 November<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener">Reserve<span class="tb-x"> a spot</span> →</a><span class="tb-x"> · <a href="./" class="tb-lang" hreflang="cs" lang="cs">🇨🇿 Česká verze</a></span></div>
+<div class="topbar">🌿 Next available class: <b>Saturday 12 December<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener">Reserve<span class="tb-x"> a spot</span> →</a><span class="tb-x"> · <a href="./" class="tb-lang" hreflang="cs" lang="cs">🇨🇿 Česká verze</a></span></div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
@@ -641,7 +641,7 @@ footer a:hover{color:#fff}
         <h1>A calm birth starts with <em>good preparation</em>.</h1>
         <p class="lead">We are Anna and Kateřina — midwives working on the delivery ward in Jablonec nad Nisou. We share the same approach to pregnant women and to birth. Our goal is to provide individual, comprehensive care, give women plenty of information and help them feel safe during birth and take an active part in it. Classes are held in Czech; English-language private classes and consultations are available on request.</p>
         <div class="hero-ctas">
-          <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary cta-reserve">Reserve a spot for 14 Nov</a>
+          <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary cta-reserve">Reserve a spot for 12 Dec</a>
           <a href="#kurz" class="btn btn-ghost cta-learn">What you will learn</a>
         </div>
         <a href="./" class="lang-banner" hreflang="cs" lang="cs"><span class="lb-flag">🇨🇿</span><span><b>Česká verze webu</b><small>Přepnout do češtiny →</small></span></a>
@@ -653,8 +653,8 @@ footer a:hover{color:#fff}
         <div class="hero-bg-word">porod</div>
         <div class="hero-photo"><img src="assets/foto-24.jpg" alt="A woman in labour leaning on the delivery bed, supported by a midwife"></div>
         <div class="next-course">
-          <div class="date"><b>14</b><span>Nov</span></div>
-          <div class="info"><b><span class="dot"></span>Next class</b><span>9:00–13:00 · Jiná Huť, Jablonec</span></div>
+          <div class="date"><b>12</b><span>Dec</span></div>
+          <div class="info"><b><span class="dot"></span>Next available class</b><span>9:00–13:00 · Jiná Huť, Jablonec</span></div>
         </div>
       </div>
     </div>
@@ -763,26 +763,36 @@ footer a:hover{color:#fff}
     <h2>Choose your date</h2>
     <p class="lead">We run classes every month at Jiná Huť in Jablonec nad Nisou — a 10-minute walk from the centre, easy to reach from Liberec too. Group classes are held in Czech; for English, book a private class.</p>
     <div class="term-grid">
-      <div class="term-card featured reveal">
-        <div class="flag">Next date</div>
+      <div class="term-card reveal">
         <div class="t-date">Sat 14 November 2026</div>
         <div class="t-meta">
           <span>🕓 9:00–13:00</span>
           <span>📍 Jiná Huť, Jablonec n. N.</span>
           <span>👩‍🍼 Led by Anna &amp; Kateřina</span>
         </div>
-        <div class="spots">Spots available</div>
-        <a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve a spot</a>
+        <div class="spots low">Fully booked</div>
+        <a href="#kontakt" data-zajem="Next class date (let me know when it is announced)" class="btn btn-light">Let me know</a>
       </div>
       <div class="term-card featured reveal">
+        <div class="flag">Next available date</div>
         <div class="t-date">Sat 12 December 2026</div>
         <div class="t-meta">
           <span>🕓 9:00–13:00</span>
           <span>📍 Jiná Huť, Jablonec n. N.</span>
           <span>👩‍🍼 Led by Anna &amp; Kateřina</span>
         </div>
-        <div class="spots">Spots available</div>
+        <div class="spots low">4 spots left</div>
         <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve a spot</a>
+      </div>
+      <div class="term-card reveal">
+        <div class="t-date">January 2027</div>
+        <div class="t-meta">
+          <span>🕓 Date to be announced</span>
+          <span>📍 Jiná Huť, Jablonec n. N.</span>
+          <span>👩‍🍼 Led by Anna &amp; Kateřina</span>
+        </div>
+        <div class="spots soon">Coming soon</div>
+        <a href="#kontakt" data-zajem="Next class date (let me know when it is announced)" class="btn btn-light">Let me know</a>
       </div>
       <div class="term-card reveal">
         <div class="t-date">Date of your choice</div>
@@ -1211,7 +1221,7 @@ footer a:hover{color:#fff}
   </div>
 </footer>
 
-<div class="sticky-cta"><a href="https://jinahut.reenio.cz/cs/terms/2026-11-14;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve the 14 Nov class →</a></div>
+<div class="sticky-cta"><a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve the 12 Dec class →</a></div>
 
 <script>
 // nav shadow + sticky CTA (mobil): objeví se až po hero, schová se u patičky
