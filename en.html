@@ -60,7 +60,7 @@
     "address": { "@type": "PostalAddress", "streetAddress": "Lovecká 561/14", "addressLocality": "Jablonec nad Nisou", "postalCode": "466 01", "addressCountry": "CZ" }
   },
   "organizer": { "@type": "Organization", "name": "Prenatal Classes Jablonec", "url": "https://www.porodnikurzyjablonec.cz/en.html" },
-  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/InStock", "url": "https://www.porodnikurzyjablonec.cz/en.html#terminy" }
+  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/SoldOut", "url": "https://www.porodnikurzyjablonec.cz/en.html#terminy" }
 }
 </script>
 <script type="application/ld+json">
@@ -589,7 +589,7 @@ footer a:hover{color:#fff}
 </head>
 <body>
 
-<div class="topbar">🌿 Next class: <b>Saturday 12 December<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener">Reserve<span class="tb-x"> a spot</span> →</a><span class="tb-x"> · <a href="./" class="tb-lang" hreflang="cs" lang="cs">🇨🇿 Česká verze</a></span></div>
+<div class="topbar">🌿 Next class: <b>Saturday 12 December<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="#kontakt" data-zajem="Waitlist for the 12 Dec 2026 class">Join the waitlist →</a><span class="tb-x"> · <a href="./" class="tb-lang" hreflang="cs" lang="cs">🇨🇿 Česká verze</a></span></div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
@@ -623,7 +623,7 @@ footer a:hover{color:#fff}
         <h1>A calm birth starts with <em>good preparation</em>.</h1>
         <p class="lead">We are Anna and Kateřina — midwives working on the delivery ward in Jablonec nad Nisou. We share the same approach to pregnant women and to birth. Our goal is to provide individual, comprehensive care, give women plenty of information and help them feel safe during birth and take an active part in it. Classes are held in Czech; English-language private classes and consultations are available on request.</p>
         <div class="hero-ctas">
-          <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary cta-reserve">Reserve a spot for 12 Dec</a>
+          <a href="#kontakt" data-zajem="Waitlist for the 12 Dec 2026 class" class="btn btn-primary cta-reserve">Join the waitlist</a>
           <a href="#kurz" class="btn btn-ghost cta-learn">What you will learn</a>
         </div>
         <a href="./" class="lang-banner" hreflang="cs" lang="cs"><span class="lb-flag">🇨🇿</span><span><b>Česká verze webu</b><small>Přepnout do češtiny →</small></span></a>
@@ -753,8 +753,8 @@ footer a:hover{color:#fff}
           <span>📍 Jiná Huť, Jablonec n. N.</span>
           <span>👩‍🍼 Led by Anna &amp; Kateřina</span>
         </div>
-        <div class="spots low">Only 1 spot left</div>
-        <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve a spot</a>
+        <div class="spots low">Fully booked · waitlist open</div>
+        <a href="#kontakt" data-zajem="Waitlist for the 12 Dec 2026 class" class="btn btn-primary">Join the waitlist</a>
       </div>
       <div class="term-card reveal">
         <div class="t-date">January 2027</div>
@@ -1099,6 +1099,7 @@ footer a:hover{color:#fff}
           <select id="f-zajem" name="Mám zájem o" required>
             <option value="">Select...</option>
             <option>Next class date (let me know when it is announced)</option>
+          <option>Waitlist for the 12 Dec 2026 class</option>
             <option>Group class</option>
             <option>Group class + companion</option>
             <option>Private class</option>
@@ -1201,7 +1202,7 @@ footer a:hover{color:#fff}
   </div>
 </footer>
 
-<div class="sticky-cta"><a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Reserve the 12 Dec class →</a></div>
+<div class="sticky-cta"><a href="#kontakt" data-zajem="Waitlist for the 12 Dec 2026 class" class="btn btn-primary">Waitlist for the 12 Dec class →</a></div>
 
 <script>
 // nav shadow + sticky CTA (mobil): objeví se až po hero, schová se u patičky

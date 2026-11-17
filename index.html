@@ -57,7 +57,7 @@
     "address": { "@type": "PostalAddress", "streetAddress": "Lovecká 561/14", "addressLocality": "Jablonec nad Nisou", "postalCode": "466 01", "addressCountry": "CZ" }
   },
   "organizer": { "@type": "Organization", "name": "Předporodní kurzy Jablonec", "url": "https://www.porodnikurzyjablonec.cz/" },
-  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/InStock", "url": "https://www.porodnikurzyjablonec.cz/#terminy" }
+  "offers": { "@type": "Offer", "price": "2500", "priceCurrency": "CZK", "availability": "https://schema.org/SoldOut", "url": "https://www.porodnikurzyjablonec.cz/#terminy" }
 }
 </script>
 <script type="application/ld+json">
@@ -586,7 +586,7 @@ footer a:hover{color:#fff}
 </head>
 <body>
 
-<div class="topbar">🌿 Nejbližší kurz: <b>sobota 12. prosince<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener">Rezervovat<span class="tb-x"> místo</span> →</a><span class="tb-x"> · <a href="en.html" class="tb-lang" hreflang="en" lang="en">🇬🇧 English version</a></span></div>
+<div class="topbar">🌿 Nejbližší kurz: <b>sobota 12. prosince<span class="tb-x"> 2026, 9:00–13:00</span></b><span class="tb-x"> · Jiná Huť, Jablonec n. N.</span> · <a href="#kontakt" data-zajem="Náhradník na kurz 12. 12. 2026">Rezervovat jako náhradník →</a><span class="tb-x"> · <a href="en.html" class="tb-lang" hreflang="en" lang="en">🇬🇧 English version</a></span></div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
@@ -620,7 +620,7 @@ footer a:hover{color:#fff}
         <h1>Klidný porod začíná <em>dobrou přípravou</em>.</h1>
         <p class="lead">Jsme Anna a Kateřina - porodní asistentky pracující na porodním sále v Jablonci nad Nisou. Při práci nás spojuje společný přístup k těhotným ženám a k porodu. Naším cílem je poskytovat individuální a komplexní péči, předávat ženám dostatek informací a umožnit jim cítit se při porodu bezpečně a být jeho aktivním účastníkem.</p>
         <div class="hero-ctas">
-          <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary cta-reserve">Rezervovat místo na 12.&#8201;12.</a>
+          <a href="#kontakt" data-zajem="Náhradník na kurz 12. 12. 2026" class="btn btn-primary cta-reserve">Rezervovat jako náhradník</a>
           <a href="#kurz" class="btn btn-ghost cta-learn">Co se na kurzu naučíte</a>
         </div>
         <a href="en.html" class="lang-banner" hreflang="en" lang="en"><span class="lb-flag">🇬🇧</span><span><b>English-speaking? This website is also available in English.</b><small>Read in English · private classes &amp; consultations in English →</small></span></a>
@@ -750,8 +750,8 @@ footer a:hover{color:#fff}
           <span>📍 Jiná Huť, Jablonec n. N.</span>
           <span>👩‍🍼 Vede Anna &amp; Kateřina</span>
         </div>
-        <div class="spots low">Zbývá poslední 1 místo</div>
-        <a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Rezervovat místo</a>
+        <div class="spots low">Obsazeno · lze jako náhradník</div>
+        <a href="#kontakt" data-zajem="Náhradník na kurz 12. 12. 2026" class="btn btn-primary">Rezervovat jako náhradník</a>
       </div>
       <div class="term-card reveal">
         <div class="t-date">Leden 2027</div>
@@ -1096,6 +1096,7 @@ footer a:hover{color:#fff}
           <select id="f-zajem" name="Mám zájem o" required>
             <option value="">Vyberte...</option>
             <option>Další termín kurzu (dejte mi vědět, až bude vypsaný)</option>
+          <option>Náhradník na kurz 12. 12. 2026</option>
             <option>Skupinový kurz</option>
             <option>Skupinový kurz + doprovod</option>
             <option>Individuální příprava</option>
@@ -1199,7 +1200,7 @@ footer a:hover{color:#fff}
   </div>
 </footer>
 
-<div class="sticky-cta"><a href="https://jinahut.reenio.cz/cs/terms/2026-12-12;viewMode=day" target="_blank" rel="noopener" class="btn btn-primary">Rezervovat kurz 12.&#8201;12. →</a></div>
+<div class="sticky-cta"><a href="#kontakt" data-zajem="Náhradník na kurz 12. 12. 2026" class="btn btn-primary">Náhradník na kurz 12.&#8201;12. →</a></div>
 
 <script>
 // nav shadow + sticky CTA (mobil): objeví se až po hero, schová se u patičky
